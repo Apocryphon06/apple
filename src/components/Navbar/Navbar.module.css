@@ -38,39 +38,12 @@ li:hover {
   margin: 0 20px;
 }
 
-.search {
-  color: #e1d9d1;
-  margin: 0 20px;
-}
 
 @media (max-width: 768px) {
   .ul li {
     display: none;
   }
-  .search {
-    display: none;
+  .wrapper {
+    justify-content: row-reverse;
   }
-  .bag {
-    display: none;
-  }
-}
-
-.search {
-  color: #e1d9d1;
-  margin: 0 20px;
-}
-
-.search:hover {
-  color: #fff;
-  transition: 0.2s;
-}
-
-.bag {
-  color: #e1d9d1;
-  margin: 0 10px;
-}
-
-.bag:hover {
-  color: #fff;
-  transition: 0.2s;
 }
