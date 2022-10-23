@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "./ui/apple.png";
-import classes from "./Navbar.module.css";
 import { Search, WorkOutline } from "@material-ui/icons";
 import styled from "styled-components";
 
