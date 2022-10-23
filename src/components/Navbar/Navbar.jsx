@@ -4,6 +4,8 @@ import { Menu, Search, WorkOutline } from "@material-ui/icons";
 import styled from "styled-components";
 
 const Icon = styled.div`
+  display: flex;
+  align-items: center;
   @media (max-width: 768px) {
     display: none;
   }
@@ -26,7 +28,10 @@ const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 15px;
-  justify-content: space-between;
+  justify-content: center;
+  @media (max-width: 768px) {
+    justify-content: space-between;
+  }
 `;
 
 const List = styled.div`
@@ -81,6 +86,9 @@ const BannerText = styled.div`
 `;
 
 const MenuIcon = styled.div`
+  display: flex;
+  justify-content: center;
+
   @media (min-width: 768px) {
     display: none;
   }
