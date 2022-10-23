@@ -15,8 +15,7 @@ const Icon = styled.div`
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   width: 100%;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
@@ -27,14 +26,17 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 `;
 
-const List = styled.ul`
-  display: inline;
+const List = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
 `;
 
 const ListItem = styled.li`
+  list-style: none;
   color: #e1d9d1;
   cursor: pointer;
   font-size: 12px;
@@ -54,11 +56,28 @@ const Logo = styled.img`
   margin: 0 20px;
 `;
 
+const Banner = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(to right, #1d1160, #800080);
+`;
+
+const BannerText = styled.div`
+  color: #fff;
+  font-size: 14px;
+  width: 64%;
+  line-height: 1.5em;
+  text-align: center;
+`;
+
 function Navbar() {
   return (
     <Container>
       <Wrapper>
-        <Logo className={classes.logo} src={logo} alt="logo" />
+        <Logo src={logo} alt="logo" />
         <List>
           <ListItem>Store</ListItem>
           <ListItem>Mac</ListItem>
@@ -89,6 +108,13 @@ function Navbar() {
           }}
         />
       </Wrapper>
+      <Banner>
+        <BannerText>
+          Last chance for up to ₹7000 instant savings on orders over ₹41900
+          across all products with HDFC Bank or American Express credit cards.*
+          Plus No Cost EMI from most leading banks.** Shop now
+        </BannerText>
+      </Banner>
     </Container>
   );
 }
