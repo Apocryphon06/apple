@@ -41,6 +41,9 @@ const List = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
+  @media (max-width: 889px) {
+    display: none;
+  }
 `;
 
 const ListItem = styled.li`
@@ -62,6 +65,9 @@ const Logo = styled.img`
   height: 16px;
   cursor: pointer;
   margin: 0 20px;
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 `;
 
 const Banner = styled.div`
@@ -69,7 +75,7 @@ const Banner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   background: linear-gradient(to right, #1d1160, #800080);
 `;
 
