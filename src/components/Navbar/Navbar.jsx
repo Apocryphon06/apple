@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./ui/apple.png";
-import { Menu, Search, WorkOutline } from "@material-ui/icons";
+import { DragHandle, Search, WorkOutline } from "@material-ui/icons";
 import styled from "styled-components";
 
 const Icon = styled.div`
@@ -99,7 +99,7 @@ function Navbar() {
     <Container>
       <Wrapper>
         <MenuIcon>
-          <Menu
+          <DragHandle
             style={{
               width: 20,
               height: 20,
