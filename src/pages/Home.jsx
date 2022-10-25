@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar/Navbar";
 import iphone14 from "../images/iphone-14.jpg";
+import tv from "../images/tv.png";
 
 const Container = styled.div`
   display: flex;
@@ -29,7 +30,7 @@ const TextContainer = styled.div`
   line-height: 3.5em;
 
   @media (max-width: 768px) {
-    transform: translate(-50%, -175%);
+    transform: translate(-50%, -120%);
     line-height: 2.5em;
   }
 `;
@@ -59,12 +60,24 @@ const Link = styled.div`
   }
   @media (max-width: 768px) {
     font-size: 18px;
+    display: none;
   }
 `;
 const Action = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+`;
+
+const Logo = styled.img`
+  width: 90px;
+  height: 30px;
+  margin: auto;
+  padding: 40px 0;
+  @media (min-width: 768px) {
+    width: 172px;
+    height: 52px;
+  }
 `;
 
 function Home() {
@@ -82,6 +95,7 @@ function Home() {
           </Action>
         </TextContainer>
       </ImageContainer>
+      <Logo src={tv} alt={tv} />
     </Container>
   );
 }

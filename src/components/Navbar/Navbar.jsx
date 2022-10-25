@@ -21,6 +21,7 @@ const Container = styled.div`
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   border: none;
+  
 `;
 
 const Wrapper = styled.div`
