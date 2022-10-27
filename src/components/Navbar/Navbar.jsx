@@ -21,7 +21,6 @@ const Container = styled.div`
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   border: none;
-  
 `;
 
 const Wrapper = styled.div`
@@ -61,7 +60,7 @@ const ListItem = styled.li`
   }
 `;
 
-const Logo = styled.img`
+export const Logo = styled.img`
   width: 16px;
   height: 16px;
   cursor: pointer;
@@ -78,6 +77,9 @@ const Banner = styled.div`
   align-items: center;
   width: 100vw;
   background: linear-gradient(to right, #1d1160, #800080);
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const BannerText = styled.div`
@@ -88,6 +90,7 @@ const BannerText = styled.div`
   text-align: center;
   flex-direction: inline;
   @media (max-width: 768px) {
+x
     width: 80%;
   }
 `;
