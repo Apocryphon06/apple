@@ -70,13 +70,29 @@ const Action = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 90px;
+  width: 100px;
   height: 30px;
   margin: auto;
   padding: 40px 0;
   @media (min-width: 768px) {
     width: 172px;
     height: 52px;
+  }
+`;
+
+const TextWrapper = styled.div`
+line-height: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const SecondaryText = styled.div`
+  text-aling: center;
+  font-size: 28px;
+  color: #808080;
+  @media (max-width: 768px) {
+    font-size: 22px;
   }
 `;
 
@@ -95,7 +111,17 @@ function Home() {
           </Action>
         </TextContainer>
       </ImageContainer>
+      
       <Logo src={tv} alt={tv} />
+      <TextWrapper>
+        <Text>The Apple experience.</Text>
+        <SecondaryText>Cinematic in every sense.</SecondaryText>
+        <SecondaryText>Avaiable starting 11.4</SecondaryText>
+        <Action>
+          <Link>Learn more &gt; </Link>
+          <Link>Order now &gt;</Link>
+        </Action>
+      </TextWrapper>
     </Container>
   );
 }
